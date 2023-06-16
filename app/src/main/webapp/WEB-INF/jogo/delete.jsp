@@ -3,17 +3,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Remover Livro</title>
+        <title>Remover Jogo</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-            <h1>Remover Livro</h1>
-            <p>Tem certeza que deseja remover o livro ${livro.titulo} ?</p>
-            <form action="/livro/delete" method="post">
-                <input type="hidden" name="id" value="${livro.id}" />
+            <h1>Remover Jogo</h1>
+            <p>Tem certeza que deseja remover o Jogo ${jogo.titulo} ?</p>
+            <form action="/jogo/delete" method="post">
+                <input type="hidden" name="id" value="${jogo.id}" />
                 <br />
-                <a href="/livro/list" class="btn btn-primary" >Voltar</a>
+                <a href="/jogo/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-danger">Excluir</button>
             </form>
         </div>
